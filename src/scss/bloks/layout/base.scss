@@ -23,13 +23,17 @@ a {
   }
 }
 h1 {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 48px;
+  margin: 1.75em 0;
   @include media-to($media-lg) {
     font-size: 34px;
   }
 }
 
+h1, h3 {
+  text-align: center;
+}
 h3,
 .like-h3 {
   font-weight: 700;
@@ -44,11 +48,9 @@ img {
   display: block;
 }
 .descr {
-  font-weight: normal;
-  font-size: 28px;
-  margin-bottom: 0;
-  line-height: 1;
+  font-size: 18px;
+  text-align: center;
   @include media-to($media-lg) {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
