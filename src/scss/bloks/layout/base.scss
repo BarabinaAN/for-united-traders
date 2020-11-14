@@ -16,10 +16,12 @@ body {
   line-height: 1.2;
 }
 a {
+  $color-link: $color-blue;
+  
   text-decoration: none;
-  color: $color-dark;
-  &:hover {
-    color: $color-hover;
+  color: $color-link;
+  &:hover:not(.nav-link) {
+    text-decoration: underline;
   }
 }
 h1 {

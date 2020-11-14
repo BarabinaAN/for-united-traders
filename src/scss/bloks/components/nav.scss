@@ -27,6 +27,9 @@
    }
 }
 .nav-link {
+   $color-hover: $color-yellow;
+   $color-active: $color-red;
+
    display: inline-block;
    font-size: 16px;
    margin: 10px 30px;
@@ -42,6 +45,9 @@
    &:disabled {
       color: rgba($color-white, 0.35);
       cursor: default;
+   }
+   &:hover {
+      color: $color-hover;
    }
 }
 .nav-burger {
