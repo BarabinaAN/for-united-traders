@@ -2,13 +2,16 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   @include media-to($media-sm) {
+      flex-direction: column;
+   }
 }
 .nav-bar {
    flex: 1;
-   @include media-to($media-md) {
+   @include media-to($media-xl) {
       position: absolute;
       top: 90px;
-      left: -1000px;
+      left: -100%;
       z-index: 1;
       display: block;
       width: 100%;
@@ -24,6 +27,9 @@
       &.is--active {
          left: 0;
       }
+   }
+   @include media-to($media-sm) {
+      top: 150px;
    }
 }
 .nav-link {
@@ -46,7 +52,7 @@
       color: rgba($color-white, 0.35);
       cursor: default;
    }
-   &:hover {
+   &:hover:not(.is--disable) {
       color: $color-hover;
    }
 }
@@ -58,8 +64,16 @@
    height: 50px;
    transition: all 1s;
    order: 1;
-   @include media-to($media-md) {
+   @include media-to($media-xl) {
       display: flex;
+   }
+}
+
+.nav-control {
+   display: flex;
+   align-items: center;
+   @include media-to($media-sm) {
+      margin-top: 15px;
    }
 }
 .burger {

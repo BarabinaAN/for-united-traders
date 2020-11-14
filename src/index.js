@@ -6,6 +6,11 @@ import './images/any/any-image-03.png';
 import './images/any/any-image-04.png';
 import './images/any/any-image-05.png';
 
+// ./social
+import './images/social/social-fb.svg';
+import './images/social/social-inst.svg';
+import './images/social/social-tw.svg';
+
 // ./bg
 import './images/bg/bg-main.jpg';
 

@@ -5,9 +5,7 @@
    img {
       height: 100%;
    }
-   @include media-to($media-md) {
-      height: 50px;
-      width: 50px;
+   @include media-to($media-xl) {
       margin-right: 0;
    }
 }
