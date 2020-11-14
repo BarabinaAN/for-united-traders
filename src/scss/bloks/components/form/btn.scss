@@ -1,0 +1,41 @@
+.btn {
+   display: inline-block;
+   vertical-align: middle;
+   text-decoration: none;
+   padding: 1.5em 2.5em;
+   text-align: center;
+   font-weight: 700;
+   border-radius: 10px;
+   border: none;
+   background-color: transparent;
+   transition: 0.25s background-color ease-in-out;
+   cursor: pointer;
+   &:focus {
+      outline: none;
+   }
+   &:disabled {
+      cursor: default;
+      opacity: 0.25;
+   }
+}
+
+.btn-primary {
+   min-width: 250px;
+   color: $color-white;
+   background-color: $color-active;
+   &:hover:not(:disabled){
+      background-color: rgba($color-active, 0.75);
+   }
+}
+
+.btn-transparent {
+   font-weight: normal;
+   font-size: 14px;
+   border: 1px solid lighten($color-dark, 79.25%);
+   &:hover:not(:disabled) {
+      font-weight: bold;
+      color: $color-white;
+      border: 1px solid rgba($color-active, 0.75);
+      background-color: rgba($color-active, 0.75);
+   }
+}

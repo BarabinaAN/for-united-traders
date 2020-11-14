@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  &:focus, 
+  &:active {
+    outline: none;
+  }
+}
+
+body {
+  background-color: $bg-color-white;
+  font-family: $font-family;
+  font-weight: 400;
+  color: $color-dark;
+  font-size: 14px;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  color: $color-dark;
+  &:hover {
+    color: $color-hover;
+  }
+}
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  @include media-to($media-lg) {
+    font-size: 34px;
+  }
+}
+
+h3,
+.like-h3 {
+  font-weight: 700;
+  font-size: 18px;
+  @include media-to($media-lg) {
+    font-size: 16px;
+  }
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+.descr {
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 0;
+  line-height: 1;
+  @include media-to($media-lg) {
+    font-size: 20px;
+  }
+}
