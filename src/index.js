@@ -1,4 +1,11 @@
 // images
+// ./any
+import './images/any/any-image-01.png';
+import './images/any/any-image-02.png';
+import './images/any/any-image-03.png';
+import './images/any/any-image-04.png';
+import './images/any/any-image-05.png';
+
 // ./bg
 import './images/bg/bg-main.jpg';
 
