@@ -28,6 +28,7 @@
    }
    &:hover {
       color: $color-hover;
+      text-decoration: none !important;
    }
 }
 .footer-social {
