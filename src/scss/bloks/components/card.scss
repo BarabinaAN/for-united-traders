@@ -5,6 +5,7 @@
    transition: $transition;
    text-align: center;
    p {
+      font-size: 14px;
       max-height: 98px;
       overflow: hidden;
       display: -webkit-box;
@@ -27,8 +28,4 @@
 }
 .card__img {
    height: 64px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
 }

@@ -1,12 +1,15 @@
 .social {
-   width: 50px;
-   height: 50px;
-   background-color: rgba($color-white, .3);
-   border-radius: 50%;
-   margin: 0 15px;
    display: flex;
    align-items: center;
    justify-content: center;
+   flex-wrap: wrap;
+}
+.social__link {
+   width: 50px;
+   height: 50px;
+   background-color: rgba($color-white, 0.3);
+   border-radius: 50%;
+   margin: 0 15px;
    transition: $transition;
    &:hover {
       background-color: $color-green;

@@ -6,7 +6,7 @@
       flex-direction: column;
    }
 }
-.nav-bar {
+.nav__bar {
    flex: 1;
    @include media-to($media-xl) {
       position: absolute;
@@ -19,7 +19,7 @@
       min-height: 170px;
       background-color: $bg-color-dark;
       transition: $transition;
-      .nav-link {
+      .nav__link {
          display: block;
          margin-top: 1em;
          margin-bottom: 1em;
@@ -32,7 +32,7 @@
       top: 150px;
    }
 }
-.nav-link {
+.nav__link {
    $color-hover: $color-yellow;
    $color-active: $color-red;
 
@@ -56,7 +56,7 @@
       color: $color-hover;
    }
 }
-.nav-burger {
+.nav__burger {
    position: relative;
    z-index: 1;
    display: none;
@@ -69,11 +69,14 @@
    }
 }
 
-.nav-control {
+.nav__control {
    display: flex;
    align-items: center;
    @include media-to($media-sm) {
       margin-top: 15px;
+   }
+   .nav__link:last-child {
+      margin-right: 0;
    }
 }
 .burger {

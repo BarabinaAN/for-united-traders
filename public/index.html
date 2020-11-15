@@ -14,23 +14,23 @@
         <a class="logo" href="/">
           <img src="./images/icon/icon-logo.svg" alt="logo" />
         </a>
-        <div class="nav-bar">
-          <a class="nav-link is--active" href="#">Products</a>
-          <a class="nav-link" href="#">News & Events</a>
-          <a class="nav-link" href="#">Support</a>
-          <a class="nav-link is--disable" href="#" tabindex="-1" disabled>Contacts</a>
+        <div class="nav__bar">
+          <a class="nav__link is--active" href="#">Products</a>
+          <a class="nav__link" href="#">News & Events</a>
+          <a class="nav__link" href="#">Support</a>
+          <a class="nav__link is--disable" href="#" tabindex="-1" disabled>Contacts</a>
         </div>
-        <div class="nav-control">
-          <div class="nav-burger">
+        <div class="nav__control">
+          <div class="nav__burger">
             <span class="burger"></span>
           </div>
-          <a class="nav-link" href="#">Login</a>
-          <a class="nav-link" href="#">Buy Now</a>
+          <a class="nav__link" href="#">Login</a>
+          <a class="nav__link" href="#">Buy Now</a>
         </div>
       </nav>
     </header>
     <section class="container">
-      <h1>WE SOLVE YOUR </br> PROBLEMS</h1>
+      <h1>WE SOLVE </br> YOUR PROBLEMS</h1>
       <p class="descr">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Nunc nec accumsan velit. Ut gravida id sem id sodales. </br>
@@ -43,7 +43,7 @@
     <div class="mt-2 grid">
       <div class="cell-md-6 cell-lg-4">
         <div class="card product">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-01.svg" alt="">
           </div>
           <div class="card__info">
@@ -59,7 +59,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card product">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-02.svg" alt="">
           </div>
           <h3>Donec efficitur molestie </h3>
@@ -73,7 +73,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card product">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-03.svg" alt="">
           </div>
           <div class="card__info">
@@ -90,17 +90,17 @@
     </div>
   </section>
   <section class="service container pt-4">
-    <h3>Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h3>
+    <h3 class="mb-2">Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h3>
     <p>
       Integer bibendum turpis sit amet pretium commodo. Cras justo elit,
       dapibus at viverra non, dapibus vitae est. Morbi facilisis mi
       non iaculis porttitor. Phasellus a nibh a lacus dignissim pharetra.
       Vivamus ullamcorper finibus mauris, sit amet volutpat enim sollicitudin sed.
     </p>
-    <div class="mt-2 grid">
+    <div class="mt-3 grid">
       <div class="cell-md-6 cell-lg-4">
         <div class="card">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-04.svg" alt="">
           </div>
           <div class="card__info">
@@ -111,7 +111,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-05.svg" alt="">
           </div>
           <div class="card__info">
@@ -122,7 +122,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-06.svg" alt="">
           </div>
           <div class="card__info">
@@ -133,7 +133,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-07.svg" alt="">
           </div>
           <div class="card__info">
@@ -144,7 +144,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-08.svg" alt="">
           </div>
           <div class="card__info">
@@ -158,7 +158,7 @@
       </div>
       <div class="cell-md-6 cell-lg-4">
         <div class="card">
-          <div class="card__img">
+          <div class="card__img image">
             <img src="../images/icon/icon-09.svg" alt="">
           </div>
           <div class="card__info">
@@ -168,12 +168,12 @@
         </div>
       </div>
 
-      <div class="service__control mt-3">
+      <div class="service__control">
         <button class="btn btn-transparent">View All Our Products</button>
       </div>
     </div>
   </section>
-  <section class="support container py-4">
+  <section class="container py-4">
     <h3 class="mb-2">Wordlwide recognition</h3>
     <p>
       Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est.
@@ -185,43 +185,43 @@
       porttitor odio, eu commodo nisi vehicula ut. Maecenas congue nisi lorem, et maximus ante vestibulum eu. Vivamus
       non imperdiet ex.
     </p>
-    <div class="support-content mt-2">
-      <div class="support__img">
+    <div class="support mt-2">
+      <div class="support__img image">
         <img src="../images/any/any-image-01.png" alt="">
       </div>
-      <div class="support__img">
+      <div class="support__img image">
         <img src="../images/any/any-image-02.png" alt="">
       </div>
-      <div class="support__img">
+      <div class="support__img image">
         <img src="../images/any/any-image-03.png" alt="">
       </div>
-      <div class="support__img">
+      <div class="support__img image">
         <img src="../images/any/any-image-04.png" alt="">
       </div>
-      <div class="support__img">
+      <div class="support__img image">
         <img src="../images/any/any-image-05.png" alt="">
       </div>
     </div>
   </section>
   <footer class="footer py-2">
     <div class="container">
-      <nav class="footer-nav">
-        <a class="footer-link" href="#">PRIVACY POLICY</a>
-        <a class="footer-link" href="#">ABOUT US</a>
-        <a class="footer-link" href="#">SUPPORT</a>
+      <nav class="footer__nav">
+        <a class="footer__link" href="#">PRIVACY POLICY</a>
+        <a class="footer__link" href="#">ABOUT US</a>
+        <a class="footer__link" href="#">SUPPORT</a>
       </nav>
-      <div class="footer-social">
-        <a class="social"  href="#">
+      <div class="social my-2">
+        <a class="social__link image"  href="#">
           <img src="../images/social/social-fb.svg" alt="fb">
         </a>
-        <a class="social"  href="#">
+        <a class="social__link image"  href="#">
           <img src="../images/social/social-tw.svg" alt="tw">
         </a>
-        <a class="social" href="#">
+        <a class="social__link image" href="#">
           <img src="../images/social/social-inst.svg" alt="inst">
         </a>
       </div>
-      <p class="footer-copiright">Copright © 1999 - 2019</p>
+      <p class="footer__copiright">Copright © 1999 - 2019</p>
     </div>
   </footer>
 </body>
