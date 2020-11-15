@@ -3,6 +3,9 @@
    justify-content: center;
    flex-wrap: wrap;
    margin-bottom: 3em;
+   @include media-to($media-lg) {
+      margin-bottom: 0;
+   }
 }
 .support__img {
    height: 100px;

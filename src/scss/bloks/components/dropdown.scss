@@ -1,0 +1,39 @@
+.dropdown {
+   position: relative;
+   &.is--active {
+      .dropdown__list {
+         display: block;
+      }
+      .dropdown__control {
+         &::after {
+            transform: rotate(-135deg);
+         }
+      }
+   }
+}
+.dropdown__control {
+   position: relative;
+   cursor: pointer;
+   &::after {
+      display: inline-block;
+      content: '\2519';
+      margin-left: 5px;
+      font-size: 14px;
+      font-family: "Open Sans", serif;
+      transform: rotate(45deg);
+   }
+}
+
+.dropdown__list {
+   position: absolute;
+   background-color: $bg-color-dark;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   display: none;
+   transition: $transition;
+   @include media-to($media-xl) {
+      position: static;
+   }
+}

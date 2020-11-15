@@ -14,12 +14,18 @@
         <a class="logo" href="/">
           <img src="./images/icon/icon-logo.svg" alt="logo" />
         </a>
-        <div class="nav__bar">
-          <a class="nav__link is--active" href="#">Products</a>
-          <a class="nav__link" href="#">News & Events</a>
-          <a class="nav__link" href="#">Support</a>
-          <a class="nav__link is--disable" href="#" tabindex="-1" disabled>Contacts</a>
-        </div>
+        <ul class="nav__bar">
+          <li class="dropdown">
+            <div class="dropdown__control nav__link">Products</div> 
+            <ul class="dropdown__list">
+              <li><a class="nav__link" href="#">First</a></li>
+              <li><a class="nav__link" href="#">Last</a></li>
+            </ul>
+          </li>
+          <li><a class="nav__link is--active" href="#">News & Events</a></li>
+          <li><a class="nav__link" href="#">Support</a></li>
+          <li><a class="nav__link is--disable" href="#" tabindex="-1" disabled>Contacts</a></li>
+        </ul>
         <div class="nav__control">
           <div class="nav__burger">
             <span class="burger"></span>
@@ -62,11 +68,12 @@
           <div class="card__img image">
             <img src="../images/icon/icon-02.svg" alt="">
           </div>
-          <h3>Donec efficitur molestie </h3>
+          <h3>Mauris interdum venenatis</h3>
           <p>
-            Nulla pretium nunc in nulla placerat,
-            sit amet porttitor enim ullamcorper.
-            Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.
+            Vivamus cursus ante eu orci rutrum, 
+            vitae viverra ante dapibus. 
+            Vivamus porta molestie turpis, 
+            quis elementum nisi egestas eget.
           </p>
           <a class="card__control" href="#">Learn More</a>
         </div>
@@ -77,11 +84,12 @@
             <img src="../images/icon/icon-03.svg" alt="">
           </div>
           <div class="card__info">
-            <h3>Donec efficitur molestie </h3>
+            <h3>Cras sit amet</h3>
             <p>
-              Nulla pretium nunc in nulla placerat,
-              sit amet porttitor enim ullamcorper.
-              Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.
+              Fusce suscipit, ante at imperdiet vehicula, 
+              ex augue feugiat enim, sed faucibus sem tortor 
+              quis turpis. Mauris lacinia neque 
+              id augue efficitur, ut feugiat massa efficitur.
             </p>
           </div>
           <a class="card__control" href="#">Learn More</a>
